@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="50" height="38" tilewidth="16" tileheight="16">
+ <tileset firstgid="1" name="menu_tiles_png" tilewidth="16" tileheight="16">
+  <image source="menu_tiles_png.png" width="272" height="64"/>
+ </tileset>
+ <layer name="world" width="50" height="38">
+  <data encoding="base64" compression="zlib">
+   eJztj00LgkAQhk2zTn2hFnRNLehQYalB//93NQsz8Das9w7vAw+z87GzmiSEEEIIIYQQQgghhBBCCCHkn1lpfEDtJt7dnPXXkZqve3YTdXvH9nTQ24jbyJ3OxZmYiguN6FzN3dnmQ55pnsOOTHtT5xzyFPb7+1hfuLfxvBRPYgkW4l48iLXmITZqyFuoF3DPolm5vHS1Bs413LH3Szfbwp4S5o76H7XbdxYvbn/suyrd18C/Vkn8n6zfunoBO+wuvl+5Ofx/m7uKT3EQ3+qoWm69l2r9AeZCvYcY6w0TfbNPfr/DZs0RaiPEMPsRvzXeF8c=
+  </data>
+ </layer>
+</map>

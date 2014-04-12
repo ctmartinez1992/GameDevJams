@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>The Achiever</title>
+		
+		<script type="text/javascript" src="js/phaser.js"></script>
+		<script type="text/javascript" src="js/Boot.js"></script>
+		<script type="text/javascript" src="js/Preloader.js"></script>
+		<script type="text/javascript" src="js/MainMenu.js"></script>
+		<script type="text/javascript" src="js/Game.js"></script>
+		<script type="text/javascript" src="js/EndGame.js"></script>
+		<script type="text/javascript" src="js/EndScreen.js"></script>
+		<script type="text/javascript" src="js/WinScreen.js"></script>
+		<script type="text/javascript" src="js/Achievement.js"></script>
+		<script type="text/javascript" src="js/Achievements.js"></script>
+		<script type="text/javascript" src="js/Dialog.js"></script>
+		<script type="text/javascript" src="js/Dialogs.js"></script>
+		
+		<style type="text/css">
+			body {
+				background-color: #101010;
+				color: #ffffff;
+			}
+
+			canvas {
+				display : block;
+				margin : auto;
+			}
+
+			@font-face {
+				font-family: "Chunk";
+				font-weight: normal;
+				src: url("assets/fonts/8bit.ttf") format("truetype");
+			}
+		</style>
+	</head>
+	<body>
+	<div id="gameContainer"></div>
+		<script type="text/javascript">
+			var achievSystem;
+			var dialogSystem;
+			var achievs = 0;
+			var achievsMax = 100;
+
+			dialog1 = false;
+			dialog2 = false;
+			dialog3 = false;
+			dialog4 = false;
+			dialog5 = false;
+			dialog6 = false;
+			dialog7 = false;
+			dialog8 = false;
+			dialog9 = false;
+			dialog10 = false;
+		
+			window.onload = function() {
+				var game = window.game = new Phaser.Game(800, 600, Phaser.AUTO, 'gameContainer');
+				game.score = 0;
+
+				game.state.add('Boot', Game6.Boot);
+				game.state.add('Preloader', Game6.Preloader);
+				game.state.add('MainMenu', Game6.MainMenu);
+				game.state.add('Game', Game6.Game);
+				game.state.add('EndGame', Game6.EndGame);
+				game.state.add('EndScreen', Game6.EndScreen);
+				game.state.add('WinScreen', Game6.WinScreen);
+
+				game.state.start('Boot');
+			};
+		</script>
+<<<<<<< HEAD
+=======
+		<br><br>
+        Created, drawn and developed by Carlos Martinez (<a href="http://ctmartinez1992.blogspot.pt">blog</a> and <a href="http://www.youtube.com/channel/UCQ649wgg3_M_C_2HDXkNApQ">channel</a>)<br>
+        Hosted at Github (<a href="https://github.com/ctmartinez1992/HTML5Quest">github</a>)<br>
+        Programmed in Phaser framework (<a href="http://phaser.io">phaser</a>)<br>
+        Drawn in Paint.NET (<a href="http://www.getpaint.net">Paint.NET</a>)<br>
+>>>>>>> 0075b4df6daad40eac3bc30a1fbecd51785b53ab
+	</body>
+</html>
