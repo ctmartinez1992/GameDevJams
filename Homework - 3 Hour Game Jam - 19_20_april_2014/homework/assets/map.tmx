@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="100" height="38" tilewidth="16" tileheight="16">
+ <tileset firstgid="1" name="tiles_spritesheet" tilewidth="16" tileheight="16">
+  <image source="../../game8/assets/tiles_spritesheet.png" width="320" height="320"/>
+ </tileset>
+ <layer name="tiles" width="100" height="38">
+  <data encoding="base64" compression="zlib">
+   eJzt10mOwjAURVGLgqr10WyBKrZAswWaLdAstN4kEpOQgRFRlHOkO7MsS3/yXQoAAAAAAAAAADAGs/TV0rTHd43VpCM+66e0z+K7x3cBwzJPi7RMq57fQinr9Jv+0qbinmaHsi/V2aZd2qdDxT32pfc4plM6p0vFPebxHtd0S/f0eHGu7T/X9DyPrrOqr+tPJ405gKH4B/iuDKg=
+  </data>
+ </layer>
+</map>

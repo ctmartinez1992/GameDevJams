@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Game 8</title>
+		
+		<script type="text/javascript" src="js/phaser.js"></script>
+		<script type="text/javascript" src="js/Boot.js"></script>
+		<script type="text/javascript" src="js/Preloader.js"></script>
+		<script type="text/javascript" src="js/MainMenu.js"></script>
+		<script type="text/javascript" src="js/Game.js"></script>
+		<script type="text/javascript" src="js/IntroScreen.js"></script>
+		<script type="text/javascript" src="js/EndScreen.js"></script>
+		<script type="text/javascript" src="js/GameOver.js"></script>
+		<script type="text/javascript" src="js/Questions.js"></script>
+		<script type="text/javascript" src="js/Question.js"></script>
+		<script type="text/javascript" src="js/Fade.js"></script>
+		<script type="text/javascript" src="js/Volume.js"></script>
+		<script type="text/javascript" src="js/Pause.js"></script>
+		
+		<style type="text/css">
+			body {
+				background-color: #101010;
+				color: #ffffff;
+			}
+
+			canvas {
+				display : block;
+				margin : auto;
+			}
+
+			@font-face {
+				font-family: "Chunk";
+				font-weight: normal;
+				src: url("assets/fonts/8bit.ttf") format("truetype");
+			}
+		</style>
+	</head>
+	<body>
+	<div id="gameContainer"></div>
+		<script type="text/javascript">
+			//Control variables
+			var doUpdate;
+			var paused;
+			
+			//Homework score
+			hmScore = 0;
+			hmScoreMax = 20;
+			
+			wonGame = false;
+			wonHomework = false;
+			
+			var game;			
+			window.onload = function() {
+				game = window.game = new Phaser.Game(800, 600, Phaser.AUTO, 'gameContainer');
+				game.score = 0;
+
+				game.state.add('Boot', Game8.Boot);
+				game.state.add('Preloader', Game8.Preloader);
+				game.state.add('MainMenu', Game8.MainMenu);
+				game.state.add('Game', Game8.Game);
+				game.state.add('IntroScreen', Game8.IntroScreen);
+				game.state.add('EndScreen', Game8.EndScreen);
+				game.state.add('GameOver', Game8.GameOver);
+
+				game.state.start('Boot');
+			};
+		</script> 
+		<br><br>
+		Song is: (<a href="http://teknoaxe.com/Link_Code_2.php?q=428">WWWW by TeknoAXE</a>) - licensed under a Creative Commons Attribution 3.0 Unported License
+	</body>
+</html>
